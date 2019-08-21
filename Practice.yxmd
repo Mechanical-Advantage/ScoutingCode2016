@@ -1,0 +1,550 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2016_practice3.db
+Table=scout</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="key" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="Replay" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="Flag" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoBalltoTowerHighSuccess" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoBalltoTowerHighFailure" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoBalltoTowerLowSuccess" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoBalltoTowerLowFailure" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoCrossedDefensePC" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoCrossedDefenseCDF" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoCrossedDefenseMT" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoCrossedDefenseRPT" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoCrossedDefensePDB" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoCrossedDefenseSP" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoCrossedDefenseRW" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoCrossedDefenseLB" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AutoCrossedDefenseBar" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPBalltoTowerHighSuccess" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPBalltoTowerHighFailure" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPBalltoTowerLowSuccess" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPBalltoTowerLowFailure" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPCrossedDefensePC" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPCrossedDefenseCDF" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPCrossedDefenseMT" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPCrossedDefenseRPT" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPCrossedDefensePDB" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPCrossedDefenseSP" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPCrossedDefenseRW" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPCrossedDefenseLB" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="TeleOPCrossedDefenseBar" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="ClimbAchieved" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="ClimbAttempt" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="ParkAttempt" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="ParkAchieved" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="IntakeRating" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="DeliverySpeedRating" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="RatingCrossedDefensePC" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="RatingCrossedDefenseCDF" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="RatingCrossedDefenseMT" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="RatingCrossedDefenseRPT" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="RatingCrossedDefensePDB" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="RatingCrossedDefenseSP" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="RatingCrossedDefenseRW" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="RatingCrossedDefenseLB" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+            <Field name="RatingCrossedDefenseBar" source="File: D:\mascout\ScoutingCode2016\data_2016_practice3.db|||scout" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="210" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4016_32eec5f5569e4f54b34c4f3153b0a154_\Engine_4816_495d7d00a22642fe83bc408d1b10f036_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="390" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Team" action="GroupBy" rename="Team" />
+            <SummarizeField field="Match" action="Count" rename="MatchCount" />
+            <SummarizeField field="CrossedLine" action="Sum" rename="Sum_CrossedLine" />
+            <SummarizeField field="CrossedLine" action="Avg" rename="Avg_CrossedLine" />
+            <SummarizeField field="AutoBalltoTowerHighSuccess" action="Avg" rename="Avg_AutoBalltoTowerHighSuccess" />
+            <SummarizeField field="AutoBalltoTowerHighFailure" action="Avg" rename="Avg_AutoBalltoTowerHighFailure" />
+            <SummarizeField field="AutoBalltoTowerLowSuccess" action="Avg" rename="Avg_AutoBalltoTowerLowSuccess" />
+            <SummarizeField field="AutoBalltoTowerLowFailure" action="Avg" rename="Avg_AutoBalltoTowerLowFailure" />
+            <SummarizeField field="AutoBalltoTowerHighSuccess" action="Max" rename="Max_AutoBalltoTowerHighSuccess" />
+            <SummarizeField field="AutoBalltoTowerHighFailure" action="Max" rename="Max_AutoBalltoTowerHighFailure" />
+            <SummarizeField field="AutoBalltoTowerLowSuccess" action="Max" rename="Max_AutoBalltoTowerLowSuccess" />
+            <SummarizeField field="AutoBalltoTowerLowFailure" action="Max" rename="Max_AutoBalltoTowerLowFailure" />
+            <SummarizeField field="AutoCrossedDefensePC" action="Avg" rename="Avg_AutoCrossedDefensePC" />
+            <SummarizeField field="AutoCrossedDefenseCDF" action="Avg" rename="Avg_AutoCrossedDefenseCDF" />
+            <SummarizeField field="AutoCrossedDefenseMT" action="Avg" rename="Avg_AutoCrossedDefenseMT" />
+            <SummarizeField field="AutoCrossedDefenseRPT" action="Avg" rename="Avg_AutoCrossedDefenseRPT" />
+            <SummarizeField field="AutoCrossedDefensePDB" action="Avg" rename="Avg_AutoCrossedDefensePDB" />
+            <SummarizeField field="AutoCrossedDefenseSP" action="Avg" rename="Avg_AutoCrossedDefenseSP" />
+            <SummarizeField field="AutoCrossedDefenseRW" action="Avg" rename="Avg_AutoCrossedDefenseRW" />
+            <SummarizeField field="AutoCrossedDefenseLB" action="Avg" rename="Avg_AutoCrossedDefenseLB" />
+            <SummarizeField field="AutoCrossedDefenseBar" action="Avg" rename="Avg_AutoCrossedDefenseBar" />
+            <SummarizeField field="TeleOPBalltoTowerHighSuccess" action="Avg" rename="Avg_TeleOPBalltoTowerHighSuccess" />
+            <SummarizeField field="TeleOPBalltoTowerHighFailure" action="Avg" rename="Avg_TeleOPBalltoTowerHighFailure" />
+            <SummarizeField field="TeleOPBalltoTowerLowSuccess" action="Avg" rename="Avg_TeleOPBalltoTowerLowSuccess" />
+            <SummarizeField field="TeleOPBalltoTowerLowFailure" action="Avg" rename="Avg_TeleOPBalltoTowerLowFailure" />
+            <SummarizeField field="TeleOPBalltoTowerHighSuccess" action="Max" rename="Max_TeleOPBalltoTowerHighSuccess" />
+            <SummarizeField field="TeleOPBalltoTowerHighFailure" action="Max" rename="Max_TeleOPBalltoTowerHighFailure" />
+            <SummarizeField field="TeleOPBalltoTowerLowSuccess" action="Max" rename="Max_TeleOPBalltoTowerLowSuccess" />
+            <SummarizeField field="TeleOPBalltoTowerLowFailure" action="Max" rename="Max_TeleOPBalltoTowerLowFailure" />
+            <SummarizeField field="TeleOPCrossedDefensePC" action="Avg" rename="Avg_TeleOPCrossedDefensePC" />
+            <SummarizeField field="TeleOPCrossedDefenseCDF" action="Avg" rename="Avg_TeleOPCrossedDefenseCDF" />
+            <SummarizeField field="TeleOPCrossedDefenseMT" action="Avg" rename="Avg_TeleOPCrossedDefenseMT" />
+            <SummarizeField field="TeleOPCrossedDefenseRPT" action="Avg" rename="Avg_TeleOPCrossedDefenseRPT" />
+            <SummarizeField field="TeleOPCrossedDefensePDB" action="Avg" rename="Avg_TeleOPCrossedDefensePDB" />
+            <SummarizeField field="TeleOPCrossedDefenseSP" action="Avg" rename="Avg_TeleOPCrossedDefenseSP" />
+            <SummarizeField field="TeleOPCrossedDefenseRW" action="Avg" rename="Avg_TeleOPCrossedDefenseRW" />
+            <SummarizeField field="TeleOPCrossedDefenseLB" action="Avg" rename="Avg_TeleOPCrossedDefenseLB" />
+            <SummarizeField field="TeleOPCrossedDefenseBar" action="Avg" rename="Avg_TeleOPCrossedDefenseBar" />
+            <SummarizeField field="ClimbAchieved" action="Sum" rename="Sum_ClimbAchieved" />
+            <SummarizeField field="ClimbAttempt" action="Sum" rename="Sum_ClimbAttempt" />
+            <SummarizeField field="ParkAttempt" action="Sum" rename="Sum_ParkAttempt" />
+            <SummarizeField field="ParkAchieved" action="Sum" rename="Sum_ParkAchieved" />
+            <SummarizeField field="Disabled" action="Sum" rename="Sum_Disabled" />
+            <SummarizeField field="DefenseRating" action="AvgNo0" rename="AvgNo0_DefenseRating" />
+            <SummarizeField field="AvoidDefenseRating" action="AvgNo0" rename="AvgNo0_AvoidDefenseRating" />
+            <SummarizeField field="RatingCrossedDefensePC" action="AvgNo0" rename="AvgNo0_RatingCrossedDefensePC" />
+            <SummarizeField field="RatingCrossedDefenseCDF" action="AvgNo0" rename="AvgNo0_RatingCrossedDefenseCDF" />
+            <SummarizeField field="RatingCrossedDefenseMT" action="AvgNo0" rename="AvgNo0_RatingCrossedDefenseMT" />
+            <SummarizeField field="RatingCrossedDefenseRPT" action="AvgNo0" rename="AvgNo0_RatingCrossedDefenseRPT" />
+            <SummarizeField field="RatingCrossedDefensePDB" action="AvgNo0" rename="AvgNo0_RatingCrossedDefensePDB" />
+            <SummarizeField field="RatingCrossedDefenseSP" action="AvgNo0" rename="AvgNo0_RatingCrossedDefenseSP" />
+            <SummarizeField field="RatingCrossedDefenseRW" action="AvgNo0" rename="AvgNo0_RatingCrossedDefenseRW" />
+            <SummarizeField field="RatingCrossedDefenseLB" action="AvgNo0" rename="AvgNo0_RatingCrossedDefenseLB" />
+            <SummarizeField field="RatingCrossedDefenseBar" action="AvgNo0" rename="AvgNo0_RatingCrossedDefenseBar" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team" selected="True" />
+            <SelectField field="Match" selected="True" />
+            <SelectField field="AllianceColor" selected="True" />
+            <SelectField field="StartPos" selected="True" />
+            <SelectField field="CrossedLine" selected="True" />
+            <SelectField field="AutoBalltoTowerHighSuccess" selected="True" />
+            <SelectField field="AutoBalltoTowerHighFailure" selected="True" />
+            <SelectField field="AutoBalltoTowerLowSuccess" selected="True" />
+            <SelectField field="AutoBalltoTowerLowFailure" selected="True" />
+            <SelectField field="AutoCrossedDefensePC" selected="True" />
+            <SelectField field="AutoCrossedDefenseCDF" selected="True" />
+            <SelectField field="AutoCrossedDefenseMT" selected="True" />
+            <SelectField field="AutoCrossedDefenseRPT" selected="True" />
+            <SelectField field="AutoCrossedDefensePDB" selected="True" />
+            <SelectField field="AutoCrossedDefenseSP" selected="True" />
+            <SelectField field="AutoCrossedDefenseRW" selected="True" />
+            <SelectField field="AutoCrossedDefenseLB" selected="True" />
+            <SelectField field="AutoCrossedDefenseBar" selected="True" />
+            <SelectField field="TeleOPBalltoTowerHighSuccess" selected="True" />
+            <SelectField field="TeleOPBalltoTowerHighFailure" selected="True" />
+            <SelectField field="TeleOPBalltoTowerLowSuccess" selected="True" />
+            <SelectField field="TeleOPBalltoTowerLowFailure" selected="True" />
+            <SelectField field="TeleOPCrossedDefensePC" selected="True" />
+            <SelectField field="TeleOPCrossedDefenseCDF" selected="True" />
+            <SelectField field="TeleOPCrossedDefenseMT" selected="True" />
+            <SelectField field="TeleOPCrossedDefenseRPT" selected="True" />
+            <SelectField field="TeleOPCrossedDefensePDB" selected="True" />
+            <SelectField field="TeleOPCrossedDefenseSP" selected="True" />
+            <SelectField field="TeleOPCrossedDefenseRW" selected="True" />
+            <SelectField field="TeleOPCrossedDefenseLB" selected="True" />
+            <SelectField field="TeleOPCrossedDefenseBar" selected="True" />
+            <SelectField field="ClimbAchieved" selected="True" />
+            <SelectField field="ClimbAttempt" selected="True" />
+            <SelectField field="WonMatch" selected="True" />
+            <SelectField field="ParkAttempt" selected="True" />
+            <SelectField field="ParkAchieved" selected="True" />
+            <SelectField field="Disabled" selected="True" />
+            <SelectField field="DriverRating" selected="True" />
+            <SelectField field="IntakeRating" selected="True" />
+            <SelectField field="DeliverySpeedRating" selected="True" />
+            <SelectField field="DefenseRating" selected="True" />
+            <SelectField field="AvoidDefenseRating" selected="True" />
+            <SelectField field="RatingCrossedDefensePC" selected="True" />
+            <SelectField field="RatingCrossedDefenseCDF" selected="True" />
+            <SelectField field="RatingCrossedDefenseMT" selected="True" />
+            <SelectField field="RatingCrossedDefenseRPT" selected="True" />
+            <SelectField field="RatingCrossedDefensePDB" selected="True" />
+            <SelectField field="RatingCrossedDefenseSP" selected="True" />
+            <SelectField field="RatingCrossedDefenseRW" selected="True" />
+            <SelectField field="RatingCrossedDefenseLB" selected="True" />
+            <SelectField field="RatingCrossedDefenseBar" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4016_32eec5f5569e4f54b34c4f3153b0a154_\Engine_4816_26877c10a62743c78474921df33bb79a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="294" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Team" />
+            <Field field="Match" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: Team, Match</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="162" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Match" action="GroupBy" rename="Match" />
+            <SummarizeField field="Team" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4016_32eec5f5569e4f54b34c4f3153b0a154_\Engine_4816_0f5f8f09734648eb85ea494bb565d58c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="258" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count] != 6</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-20 20:25:10</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>6</Operand>
+              <StartDate>2019-08-20 20:25:10</StartDate>
+              <EndDate>2019-08-20 20:25:10</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] != 6</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="138" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Match" action="GroupBy" rename="Match" />
+            <SummarizeField field="AllianceColor" action="GroupBy" rename="AllianceColor" />
+            <SummarizeField field="Team" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4016_32eec5f5569e4f54b34c4f3153b0a154_\Engine_4816_eda763aaac9a40388fa0f82e885c6f22_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="258" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count] != 3</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-20 20:28:50</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2019-08-20 20:28:50</StartDate>
+              <EndDate>2019-08-20 20:28:50</EndDate>
+              <Operand>3</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] != 3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Unique" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Unique" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Unique" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Practice</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

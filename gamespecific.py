@@ -11,64 +11,72 @@ SCOUT_FIELDS = {
     "Flag": 0,
     "AllianceColor": 0,
     "StartPos": 0,
-    "StartLevel": 0,
     "CrossedLine": 0,
-    "AutoShipHatch": 0,
-	"AutoShipHatchFailures": 0,
-	"AutoShipCargo": 0,
-	"AutoShipCargoFailures": 0,
-    "AutoRocketHatch": 0,
-	"AutoRocketHatchFailures": 0,
-    "AutoRocketCargo": 0,
-	"AutoRocketCargoFailures": 0,
-    "RocketL1Hatch": 0,
-	"RocketL1HatchFailures": 0,
-    "RocketL1Cargo": 0,
-	"RocketL1CargoFailures": 0,
-    "RocketL2Hatch": 0,
-	"RocketL2HatchFailures": 0,
-    "RocketL2Cargo": 0,
-	"RocketL2CargoFailures": 0,
-    "RocketL3Hatch": 0,
-	"RocketL3HatchFailures": 0,
-    "RocketL3Cargo": 0,
-	"RocketL3CargoFailures": 0,
-    "ShipHatch": 0,
-	"ShipHatchFailures": 0,
-    "ShipCargo": 0,
-	"ShipCargoFailures": 0,
-    "ClimbLevel": 0,
-	"ClimbLevelAttempted": 0,
+    "AutoBalltoTowerHighSuccess": 0,
+    "AutoBalltoTowerHighFailure": 0,
+    "AutoBalltoTowerLowSuccess": 0,
+    "AutoBalltoTowerLowFailure": 0,
+    "AutoCrossedDefensePC": 0,
+    "AutoCrossedDefenseCDF": 0,
+    "AutoCrossedDefenseMT": 0,
+    "AutoCrossedDefenseRPT": 0,
+    "AutoCrossedDefensePDB": 0,
+    "AutoCrossedDefenseSP": 0,
+    "AutoCrossedDefenseRW": 0,
+    "AutoCrossedDefenseLB": 0,
+    "AutoCrossedDefenseBar": 0,
+    "TeleOPBalltoTowerHighSuccess": 0,
+    "TeleOPBalltoTowerHighFailure": 0,
+    "TeleOPBalltoTowerLowSuccess": 0,
+    "TeleOPBalltoTowerLowFailure": 0,
+    "TeleOPCrossedDefensePC": 0,
+    "TeleOPCrossedDefenseCDF": 0,
+    "TeleOPCrossedDefenseMT": 0,
+    "TeleOPCrossedDefenseRPT": 0,
+    "TeleOPCrossedDefensePDB": 0,
+    "TeleOPCrossedDefenseSP": 0,
+    "TeleOPCrossedDefenseRW": 0,
+    "TeleOPCrossedDefenseLB": 0,
+    "TeleOPCrossedDefenseBar": 0,
+    "ClimbAchieved": 0,
+	"ClimbAttempt": 0,
     "WonMatch": 0,
-    "LiftedOthers": 0,
-	"LiftedOthersAttempted": 0,
+    "ParkAttempt": 0,
+	"ParkAchieved": 0,
     "Disabled": 0,
     "DriverRating": 0,
-    "HatchColRating": 0,
-    "HatchDelRating": 0,
-    "CargoColRating": 0,
-    "CargoDelRating": 0,
+    "IntakeRating": 0,
+    "DeliverySpeedRating": 0,
     "DefenseRating": 0,
-    "AvoidDefenseRating": 0
+    "AvoidDefenseRating": 0,
+    "RatingCrossedDefensePC": 0,
+    "RatingCrossedDefenseCDF": 0,
+    "RatingCrossedDefenseMT": 0,
+    "RatingCrossedDefenseRPT": 0,
+    "RatingCrossedDefensePDB": 0,
+    "RatingCrossedDefenseSP": 0,
+    "RatingCrossedDefenseRW": 0,
+    "RatingCrossedDefenseLB": 0,
+    "RatingCrossedDefenseBar": 0
 }
 
 #Defines the fields that are stored in the "averages" and similar tables of the database. These are the fields displayed on the home page of the website.
 AVERAGE_FIELDS = {
     "team": 0,
     "apr":0,
-    "RocketL1Hatch": 0,
-    "RocketL1Cargo": 0,
-    "RocketL2Hatch": 0,
-    "RocketL2Cargo": 0
+    "AutoCrossedDefensePC": 0,
+    "AutoCrossedDefenseCDF": 0,
+    "AutoCrossedDefenseMT": 0,
+    "AutoCrossedDefenseRPT": 0
 }
 
 #Defines the fields displayed on the charts on the team and compare pages
 CHART_FIELDS = {
     "match": 0,
-    "RocketL1Hatch": 0,
-    "RocketL1Cargo": 0,
-    "RocketL2Hatch": 0,
-    "RocketL2Cargo": 0
+    "AutoCrossedDefensePC": 0,
+    "AutoCrossedDefenseCDF": 0,
+    "AutoCrossedDefenseMT": 0,
+    "AutoCrossedDefenseRPT": 0
 }
 
 
@@ -97,50 +105,55 @@ def processSheet(scout):
 
         scout.set("AllianceColor", scout.rangefield('L-10', 0, 1))
         scout.set("StartPos", scout.rangefield('F-10', 1, 3)-1)
-        scout.set("StartLevel", scout.rangefield('G-12', 1, 2))
-        scout.set("CrossedLine", scout.boolfield('M-12'))
-        scout.set("AutoShipHatch", scout.countfield('T-10', 1, 2))
-        scout.set("AutoShipCargo", scout.countfield('T-11', 1, 2))
-        scout.set("AutoShipHatchFailures", scout.countfield('W-10', 1, 2))
-        scout.set("AutoShipCargoFailures", scout.countfield('W-11', 1, 2))
-        scout.set("AutoRocketHatch", scout.countfield('AE-10', 1, 2))
-        scout.set("AutoRocketCargo", scout.countfield('AE-11', 1, 2))
-        scout.set("AutoRocketHatchFailures", scout.countfield('AH-10', 1, 2))
-        scout.set("AutoRocketCargoFailures", scout.countfield('AH-11', 1, 2))
+        scout.set("CrossedLine", scout.boolfield('P-10'))
+        scout.set("AutoBalltoTowerHighSuccess", scout.rangefield('T-10',1,3))
+        scout.set("AutoBalltoTowerHighFailure", scout.rangefield('T-11',1,3))
+        scout.set("AutoBalltoTowerLowSuccess", scout.rangefield('X-10',1,3))
+        scout.set("AutoBalltoTowerLowFailure", scout.rangefield('X-11',1,3))
+        scout.set("AutoCrossedDefensePC", scout.rangefield('AB-11',1,2))
+        scout.set("AutoCrossedDefenseCDF", scout.rangefield('AC-11',1,2))
+        scout.set("AutoCrossedDefenseMT", scout.rangefield('AD-11',1,2))
+        scout.set("AutoCrossedDefenseRPT", scout.rangefield('AE-11',1,2))
+        scout.set("AutoCrossedDefensePDB", scout.rangefield('AF-11',1,2))
+        scout.set("AutoCrossedDefenseSP", scout.rangefield('AG-11',1,2))
+        scout.set("AutoCrossedDefenseRW", scout.rangefield('AH-11',1,2))
+        scout.set("AutoCrossedDefenseLB", scout.rangefield('AI-11',1,2))
+        scout.set("AutoCrossedDefenseBar", scout.rangefield('AJ-11',1,2))
+        scout.set("TeleOPBalltoTowerHighSuccess", scout.rangefield('F-14',1,8))
+        scout.set("TeleOPBalltoTowerHighFailure", scout.rangefield('F-15',1,8))
+        scout.set("TeleOPBalltoTowerLowSuccess", scout.rangefield('F-18',1,8))
+        scout.set("TeleOPBalltoTowerLowFailure", scout.rangefield('F-19',1,8))
+        scout.set("TeleOPCrossedDefensePC", scout.rangefield('Q-16',1,2))
+        scout.set("TeleOPCrossedDefenseCDF", scout.rangefield('R-16',1,2))
+        scout.set("TeleOPCrossedDefenseMT", scout.rangefield('S-16',1,2))
+        scout.set("TeleOPCrossedDefenseRPT", scout.rangefield('T-16',1,2))
+        scout.set("TeleOPCrossedDefensePDB", scout.rangefield('U-16',1,2))
+        scout.set("TeleOPCrossedDefenseSP", scout.rangefield('V-16',1,2))
+        scout.set("TeleOPCrossedDefenseRW", scout.rangefield('W-16',1,2))
+        scout.set("TeleOPCrossedDefenseLB", scout.rangefield('X-16',1,2))
+        scout.set("TeleOPCrossedDefenseBar", scout.rangefield('Y-16',1,2))
 
-        scout.set("RocketL1Hatch", scout.countfield('H-14', 1, 4))
-        scout.set("RocketL1HatchFailures", scout.countfield('M-14', 1, 6))
-        scout.set("RocketL2Hatch", scout.countfield('H-15', 1, 4))
-        scout.set("RocketL2HatchFailures", scout.countfield('M-15', 1, 6))
-        scout.set("RocketL3Hatch", scout.countfield('H-16', 1, 4))
-        scout.set("RocketL3HatchFailures", scout.countfield('M-16', 1, 6))
-
-        scout.set("RocketL1Cargo", scout.countfield('Y-14', 1, 4))
-        scout.set("RocketL1CargoFailures", scout.countfield('AD-14', 1, 6))
-        scout.set("RocketL2Cargo", scout.countfield('Y-15', 1, 4))
-        scout.set("RocketL2CargoFailures", scout.countfield('AD-15', 1, 6))
-        scout.set("RocketL3Cargo", scout.countfield('Y-16', 1, 4))
-        scout.set("RocketL3CargoFailures", scout.countfield('AD-16', 1, 6))
-
-        scout.set("ShipHatch", scout.countfield('F-18', 1, 8))
-        scout.set("ShipHatchFailures", scout.countfield('O-18', 1, 8))
-        scout.set("ShipCargo", scout.countfield('F-19', 1, 8))
-        scout.set("ShipCargoFailures", scout.countfield('O-19', 1, 8))
-
-        scout.set("ClimbLevelAttempted", scout.rangefield('G-21', 1, 3))
-        scout.set("ClimbLevel", scout.rangefield('G-22', 1, 3))
         scout.set("WonMatch", scout.boolfield('F-24'))
-        scout.set("LiftedOthersAttempted", scout.rangefield('P-21', 2, 3))
-        scout.set("LiftedOthers", scout.rangefield('P-22', 2, 3))
+        scout.set("ClimbAttempt", scout.boolfield('G-21'))
+        scout.set("ClimbAchieved", scout.boolfield('G-22'))
+        scout.set("ParkAttempt", scout.boolfield('L-21',))
+        scout.set("ParkAchieved", scout.boolfield('L-22',))
         scout.set("Disabled", scout.boolfield('F-25'))
 
-        scout.set("DriverRating", scout.rangefield('U-21', 0, 5))
-        scout.set("HatchColRating", scout.rangefield('U-22', 0, 5))
-        scout.set("HatchDelRating", scout.rangefield('AD-18', 0, 5))
-        scout.set("CargoColRating", scout.rangefield('AD-19', 0, 5))
-        scout.set("CargoDelRating", scout.rangefield('AD-20', 0, 5))
-        scout.set("DefenseRating", scout.rangefield('AD-21', 0, 5))
-        scout.set("AvoidDefenseRating", scout.rangefield('AD-22', 0, 5))
+        scout.set("DriverRating", scout.rangefield('AD-15', 0, 5))
+        scout.set("IntakeRating", scout.rangefield('AD-16', 0, 5))
+        scout.set("DeliverySpeedRating", scout.rangefield('AD-17', 0, 5))
+        scout.set("DefenseRating", scout.rangefield('AD-18', 0, 5))
+        scout.set("AvoidDefenseRating", scout.rangefield('AD-19', 0, 5))
+        scout.set("RatingCrossedDefensePC", scout.rangefield('0-21', 0,5))
+        scout.set("RatingCrossedDefenseCDF", scout.rangefield('P-21', 0,5))
+        scout.set("RatingCrossedDefenseMT", scout.rangefield('Q-21', 0,5))
+        scout.set("RatingCrossedDefenseRPT", scout.rangefield('R-21', 0,5))
+        scout.set("RatingCrossedDefensePDB", scout.rangefield('S-21', 0,5))
+        scout.set("RatingCrossedDefenseSP", scout.rangefield('T-21', 0,5))
+        scout.set("RatingCrossedDefenseRW", scout.rangefield('U-21', 0, 5))
+        scout.set("RatingCrossedDefenseLB", scout.rangefield('V-21',0, 5))
+        scout.set("RatingCrossedDefenseBar", scout.rangefield('W-21',0, 5))
 
         scout.set("Replay", scout.boolfield('AK-5'))
 
@@ -150,18 +163,18 @@ def processSheet(scout):
 #Takes an entry from the Scout database table and generates text for display on the team page. This page has 4 columns, currently used for auto, 2 teleop, and other (like fouls and end game)
 def generateTeamText(e):
     text = {'auto': "", 'teleop1': "", 'teleop2': "", 'other': ""}
-    text['auto'] += 'baseline, ' if e['RocketL1Hatch'] else ''
-    text['auto'] += 'Switch try, ' if e['RocketL1Cargo'] else ''
-    text['auto'] += 'Scale try, ' if e['RocketL2Hatch'] else ''
-    text['auto'] += 'Exchange try, ' if e['RocketL2Cargo'] else ''
+    text['auto'] += 'baseline, ' if e['AutoCrossedDefensePC'] else ''
+    text['auto'] += 'Switch try, ' if e['AutoCrossedDefenseCDF'] else ''
+    text['auto'] += 'Scale try, ' if e['AutoCrossedDefenseMT'] else ''
+    text['auto'] += 'Exchange try, ' if e['AutoCrossedDefenseRPT'] else ''
 
     text['teleop1'] += str(
-        e['RocketL1Hatch']) + 'x to scale, ' if e['RocketL1Hatch'] else ''
+        e['AutoCrossedDefensePC']) + 'x to scale, ' if e['AutoCrossedDefensePC'] else ''
 
     text['teleop2'] += str(
-        e['RocketL1Cargo']) + 'to switch, ' if e['RocketL1Cargo'] else ''
+        e['AutoCrossedDefenseCDF']) + 'to switch, ' if e['AutoCrossedDefenseCDF'] else ''
     text['teleop2'] += str(
-        e['RocketL2Hatch']) + 'to opp switch, ' if e['RocketL2Hatch'] else ''
+        e['AutoCrossedDefenseMT']) + 'to opp switch, ' if e['AutoCrossedDefenseMT'] else ''
 
     text['other'] = 'Climb, ' if e['Climb'] else ' '
 
@@ -174,10 +187,10 @@ def generateChartData(e):
     dp = dict(CHART_FIELDS)
     dp["match"] = e['match']
 
-    dp['RocketL1Hatch'] += e['RocketL1Hatch']
-    dp['RocketL1Cargo'] += e['RocketL1Cargo']
-    dp['RocketL2Hatch'] += e['RocketL2Hatch']
-    dp['RocketL2Cargo'] += e['RocketL2Cargo']
+    dp['AutoCrossedDefensePC'] += e['AutoCrossedDefensePC']
+    dp['AutoCrossedDefenseCDF'] += e['AutoCrossedDefenseCDF']
+    dp['AutoCrossedDefenseMT'] += e['AutoCrossedDefenseMT']
+    dp['AutoCrossedDefenseRPT'] += e['AutoCrossedDefenseRPT']
 
     return dp
 
@@ -252,16 +265,16 @@ def calcTotals(entries):
         sums[key] = []
     #For each entry, add components to the running total if appropriate
     for i, e in enumerate(entries):
-        sums['RocketL1Hatch'].append(e['RocketL1Hatch'])
-        sums['RocketL1Cargo'].append(e['RocketL1Cargo'])
-        sums['RocketL2Hatch'].append(e['RocketL2Hatch'])
-        sums['RocketL2Cargo'].append(e['RocketL2Cargo'])
+        sums['AutoCrossedDefensePC'].append(e['AutoCrossedDefensePC'])
+        sums['AutoCrossedDefenseCDF'].append(e['AutoCrossedDefenseCDF'])
+        sums['AutoCrossedDefenseMT'].append(e['AutoCrossedDefenseMT'])
+        sums['AutoCrossedDefenseRPT'].append(e['AutoCrossedDefenseRPT'])
 
         if i < 3:
-            lastThree['RocketL1Hatch'] += e['RocketL1Hatch']
-            lastThree['RocketL1Cargo'] += e['RocketL1Cargo']
-            lastThree['RocketL2Hatch'] += e['RocketL2Hatch']
-            lastThree['RocketL2Cargo'] += e['RocketL2Cargo']
+            lastThree['AutoCrossedDefensePC'] += e['AutoCrossedDefensePC']
+            lastThree['AutoCrossedDefenseCDF'] += e['AutoCrossedDefenseCDF']
+            lastThree['AutoCrossedDefenseMT'] += e['AutoCrossedDefenseMT']
+            lastThree['AutoCrossedDefenseRPT'] += e['AutoCrossedDefenseRPT']
             lastThreeCount += 1
 
     #If there is data, average out the last 3 or less matches
